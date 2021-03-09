@@ -207,7 +207,7 @@ MSG
 
 print "Checking if libs are available for compiling...\n";
 
-check_lib(
+check_lib_or_exit(
   debug => 1,
   LIBS => ($opt->{'embedded'} ? $opt->{'embedded'} : $opt->{libs}),
 );
