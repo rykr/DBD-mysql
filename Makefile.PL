@@ -207,7 +207,7 @@ MSG
 
 print "Checking if libs are available for compiling...\n";
 
-assert_lib(
+check_lib(
   debug => 1,
   LIBS => ($opt->{'embedded'} ? $opt->{'embedded'} : $opt->{libs}),
 );
